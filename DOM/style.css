@@ -1,0 +1,49 @@
+/*
+//variables
+let source = document.getAttribute("source")
+let destination = document.getElementById("destination")
+//ahora falta intercambiar el contenido
+let source = document.getElementById("destination")
+let destination = document.getElementById("source")
+source.innerHTML = ("Texto Destination")
+destination.innerHTML = ("Texto Source")
+-----
+Ejercicio: Manipular Texto Y Contenido
+Creá un archivo HTML que, dentro de su <body> solo tenga un título <h1>.
+Por consola, cambiá el texto del título.
+Por consola, cambiá el título por un párrafo con un texto a elección.
+Por consola, agregá otro párrafo al <body> con un texto a elección.
+
+
+console.dir(document)
+//selecciona
+let titulo = document.querySelector("h1")
+//cambia el contenido
+titulo.textContent="texto cambiado!!"
+//lo cambia por un parrafo
+titulo.innerHTML="<p>Lo cambie por un parrafo</p>"
+//crear una var para p y un div para contener a p
+let p2 = document.createElement("p")
+//agrego contenido a p
+p2.textContent="Agregué este párrafo como lo pide el ejercicio"
+let div = document.createElement("div")
+div.appendChild(p2)
+//agrego el div al body
+document.body.appendChild(div)
+-------
+Manipular CSS
+Creá un documento HTML con un <div> adentro.
+Usando la Propiedad style del elemento en JavaScript, dale a ese <div> altura, ancho y un color de fondo.
+Creá la clase .square en tu stylesheet, y dale las mismas Propiedades.
+Ahora en vez de agregársela con la Propiedad style, hacelo con la Propiedad classList.
+¿Que devuelve div.classList?
+Desde tu consola, sacá la clase .square al <div>.
+Hacé una Función que cada un segundo (setInterval()) se fije si tiene la clase .square. Si la tiene, que se la quite; si no la tiene, que se la agregue.
+
+console.dir(document)
+let div = document.querySelector("h1")
+
+
+
+*/
+

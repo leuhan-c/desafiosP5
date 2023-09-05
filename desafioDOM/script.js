@@ -18,7 +18,7 @@ miAuto["nuevo"] = true
 let propertyKey = "modelo"
 miAuto[propertyKey]="Argo"
 let anotherPropertyKey = "precio"
-miAuto[propertyKey]=3000000000
+miAuto[anotherPropertyKey]=3000000000
 let nextProperty = "color"
 miAuto[nextProperty]="negro"
 
@@ -26,5 +26,34 @@ for (let propiedad in miAuto) {
     console.log(propiedad + ": " + miAuto[propiedad])
 }
 -------------------
+Aumentar La Nota
+Tenés una lista de estudiantes con su desempeño académico actual. Querés subirle 2 puntos a aquellos que su nota sea mayor a 5. Recordá que la nota tampoco puede superar al 10.
+let estudiantes = [
+    { Estudiante: "Juan", nota: 6 },
+    { Estudiante: "Mario", nota: 8 },
+    { Estudiante: "Julia", nota: 10 },
+    { Estudiante: "Sofia", nota: 2 },
+]
+estudiantes.forEach((Estudiante) => {
+    if (estudiante.nota >= 5 && estudiantesnota <= 8) {
+        estudiante.nota += 2
+    }
+});
+---------------------------------
+Base De Datos De Películas
+En este ejercicio, deberás crear un Arreglo llamado películas, que tenga -por cada película- un Objeto con las siguientes Propiedades:
 
+titulo
+rating
+loHasVisto
+Usá un for loop para iterar sobre el Arreglo e imprimir un resultado en la consola que se vea como esto:
+
+Viste "Busqueda implacable" - 5 estrellas   
+No viste "Norbit" - 3 estrellas  
+Viste "Mini espías" - 2 estrellas  
+No viste "La vida es bella" - 5 estrellas
+copy to clipboard
+
+🎬 ¡Podés usar tus propias películas!
 */
+
