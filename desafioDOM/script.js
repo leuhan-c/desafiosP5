@@ -55,5 +55,62 @@ No viste "La vida es bella" - 5 estrellas
 copy to clipboard
 
 🎬 ¡Podés usar tus propias películas!
-*/
 
+let peliculas = [
+    {
+        titulo: "X-Man", 
+        rating: 10,
+        loHasVisto: true,
+    },
+    {
+        titulo: "Matrix", 
+        rating: 7,
+        loHasVisto: false,
+    },
+    {
+        titulo: "Buscando a Nemo", 
+        rating: 3,
+        loHasVisto: true,
+    }
+];
+for (let i = 0; i < peliculas.length; i ++) {
+    if (peliculas[i].loHasVisto == true) {
+        console.log(`Viste ${peliculas[i].titulo} - ${peliculas[i].rating} estrellas`) 
+    } else {
+        console.log(`No viste ${peliculas[i]["titulo"]} - ${peliculas[i]["rating"]} estrellas`) 
+    }  
+}
+--------------------------------------------
+Números Duplicados
+Veamos el siguiente código:
+let numeros = [2, 4, 5, 37, 0]
+let numeros_duplicados = {} 
+// Después debería quedar así { 0: 0, 2: 4, 4: 8, 5: 10, 37: 74}
+Recorré el Arreglo numeros y poné cada número (2, 4, 5, 37, 0) como una Propiedad del Objeto numeros_duplicados. El Valor de cada Propiedad deberá ser ese número multiplicado por dos.
+let numeros = [2, 4, 5, 37, 0]
+let numeros_duplicados = {} 
+// Después debería quedar así { 0: 0, 2: 4, 4: 8, 5: 10, 37: 74}
+
+for (let i = 0; i < numeros.length; i++) {
+    console.log(numeros_duplicados[numeros[i]] = numeros[i]*2 )
+}
+--------------------------------------------
+-->Desafío + 27 (Se trata del desafío de la clase 12 que te proponemos que lo compartas en Discord cuando termines)
+Tenemos un Arreglo de Objetos, donde cada uno representa a una persona. Usando .filter(), creá un nuevo Arreglo con las personas que tengan más de 27 años.
+
+let personas = [ { nombre: 'Ana', edad: '28'},
+{ nombre: 'María', edad: '24' }, { nombre: 'José', edad: '31' }
+];
+let personasConMasDe27 = // Codeá la solución
+console.log(personasConMasDe27);
+// [{ nombre: 'Ana', edad: '28' }, { nombre: 'José', edad: '31' }]
+
+let personas = [
+    { nombre: 'Ana', edad: '28'},
+    { nombre: 'María', edad: '24' }, 
+    { nombre: 'José', edad: '31' }
+];
+let personasConMasDe27 = []
+personasConMasDe27 = personas.filter(personas => personas.edad > 27)
+
+*/
